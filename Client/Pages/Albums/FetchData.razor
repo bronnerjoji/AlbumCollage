@@ -1,0 +1,64 @@
+﻿@page "/albums"
+@inject HttpClient client
+@inject IJSRuntime js
+<h3>Albums</h3>
+<small>Add as many albums as you wish.</small>
+<div class="form-group">
+    <a class="btn btn-success" href="albums/create"><i class="oi oi-plus"></i> Create New</a>
+</div>
+<br>
+@if (Albums == null)
+{
+    <text>Loading...</text>
+}
+else if (Albums.Length == 0)
+{
+    <text>No Records Found.</text>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Album Name</th>
+                <th>Artist Name</th>
+                <th>Release Date</th>
+                <th>AlbumArt</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Album alb in Albums)
+            {
+                <tr>
+                    <td>@alb.AlbumId</td>
+                    <td>@alb.Name</td>
+                    <td>@alb.Artist</td>
+                    <td>@alb.ReleaseDate.ToString("dd MMM yyyy")</td>
+                    <td><img src="data:image/jpeg;base64,@alb.AlbumArt" /></td>
+                    <td>
+                        <a class="btn btn-success" href="albums/edit/@alb.AlbumId">Edit</a>
+                        <button class="btn btn-danger" @onclick="@(() => Delete(alb.AlbumId))">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    Album[] Albums { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Albums = await client.GetFromJsonAsync<Album[]>("api/albums");
+    }
+    async Task Delete(int albumId)
+    {
+        var alb = Albums.First(x => x.AlbumId == albumId);
+        if (await js.InvokeAsync<bool>("confirm", $"Do you want to delete {alb.Name}'s ({alb.AlbumId}) Record?"))
+        {
+            await client.DeleteAsync($"api/albums/{albumId}");
+            await OnInitializedAsync();
+        }
+    }
+}

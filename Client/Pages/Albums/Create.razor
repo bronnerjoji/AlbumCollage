@@ -1,0 +1,14 @@
+﻿@page "/albums/create"
+@inject HttpClient http
+@inject NavigationManager uriHelper
+<h3>Create</h3>
+<Form ButtonText="Add Album" Alb="@alb"
+      OnValidSubmit="@CreateAlbum" />
+@code {
+    Album alb = new Album();
+    async Task CreateAlbum()
+    {
+        await http.PostAsJsonAsync("api/albums", alb);
+        uriHelper.NavigateTo("albums");
+    }
+}

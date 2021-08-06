@@ -1,0 +1,21 @@
+﻿@page "/albums/edit/{AlbumId:int}"
+@inject HttpClient http
+@inject NavigationManager uriHelper
+@inject IJSRuntime js
+<h3>Edit</h3>
+<Form ButtonText="Update" Alb="alb"
+      OnValidSubmit="@EditAlbum" />
+@code {
+    [Parameter] public int AlbumId { get; set; }
+    Album alb = new Album();
+    protected async override Task OnParametersSetAsync()
+    {
+        alb = await http.GetFromJsonAsync<Album>($"api/albums/{AlbumId}");
+    }
+    async Task EditAlbum()
+    {
+        await http.PutAsJsonAsync("api/albums", alb);
+        await js.InvokeVoidAsync("alert", $"Updated Successfully!");
+        uriHelper.NavigateTo("Albums");
+    }
+}

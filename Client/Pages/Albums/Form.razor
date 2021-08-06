@@ -1,0 +1,58 @@
+﻿<EditForm Model="@Alb" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Album Name :</label>
+        <div>
+            <InputText @bind-Value="@Alb.Name" />
+            <ValidationMessage For="@(() => Alb.Name)" />
+        </div>
+    </div>
+    <div class="form-group ">
+        <div>
+            <label>Artist :</label>
+            <div>
+                <InputText @bind-Value="@Alb.Artist" />
+                <ValidationMessage For="@(() => Alb.Artist)" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group ">
+        <div>
+            <label>Release Date :</label>
+            <div>
+                <InputDate @bind-Value="@Alb.ReleaseDate" />
+                <ValidationMessage For="@(() => Alb.ReleaseDate)" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group ">
+        <div>
+            <InputImg Label="Picture" OnSelectedImage="PictureSelected" ImageURL="@imageURL" />  
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">
+        @ButtonText
+    </button>
+</EditForm>
+@code {
+    [Parameter] public Album Alb { get; set; }
+    [Parameter] public string ButtonText { get; set; } = "Save";
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
+    private string imageURL;
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(Alb.AlbumArt))
+        {
+            imageURL = Alb.AlbumArt;
+            Alb.AlbumArt = null;
+        }
+    }
+
+    private void PictureSelected(string imageBase64)
+    {
+        Alb.AlbumArt = imageBase64;
+        imageURL = null;
+    }
+}
