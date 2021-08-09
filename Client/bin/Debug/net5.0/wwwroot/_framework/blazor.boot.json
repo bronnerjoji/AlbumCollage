@@ -243,12 +243,12 @@
       "netstandard.dll": "sha256-vJpyW6cE\/+ewo5rVB5JUu9x2f8aLnqoIazac8ef5FzQ=",
       "System.Private.CoreLib.dll": "sha256-CvQTDivHJZAtRXyCbDa5f5+okJt39WRFrZSmXTMSau0=",
       "AlbumCollage.Shared.dll": "sha256-Rp92vpjbLlVtWxuF59dPpBMoB7TDRDH9YfRk4QxmW0g=",
-      "AlbumCollage.Client.dll": "sha256-8dmKZkz7mR5dAC7GbXM8zXXIJ1GKUFjgIgQ6r\/19oUA="
+      "AlbumCollage.Client.dll": "sha256-VLr2KeCTjNXiDUbS\/3Mt2CG8sEBAb1EdUDZnSe+CeEM="
     },
     "lazyAssembly": null,
     "pdb": {
       "AlbumCollage.Shared.pdb": "sha256-rXcDQAaZ7ujKhnApo4RBYrUqfxkGC+BfFkfJKNt1V94=",
-      "AlbumCollage.Client.pdb": "sha256-cZfuY34vrPqLjsykHsW4Msbq\/rYwJhUEscU27YdEoyQ="
+      "AlbumCollage.Client.pdb": "sha256-vYlabqiOGuUG2CR0ums1N1qwkGqVj9KPIRQf8YvEU+A="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2OdnPsDgJyoSaSlvebGMRd2MxC+4UIqparqVrQZAFDE=",

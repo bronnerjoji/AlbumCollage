@@ -108,7 +108,7 @@ using AlbumCollage.Shared.Models;
     }
     async Task EditAlbum()
     {
-        await http.PutAsJsonAsync("api/albums", alb);
+        await http.PutAsJsonAsync($"api/albums/{AlbumId}", alb);
         await js.InvokeVoidAsync("alert", $"Updated Successfully!");
         uriHelper.NavigateTo("Albums");
     }
