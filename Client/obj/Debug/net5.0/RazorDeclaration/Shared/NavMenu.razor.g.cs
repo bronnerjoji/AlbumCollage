@@ -97,7 +97,7 @@ using AlbumCollage.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Shared\NavMenu.razor"
+#line 38 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
