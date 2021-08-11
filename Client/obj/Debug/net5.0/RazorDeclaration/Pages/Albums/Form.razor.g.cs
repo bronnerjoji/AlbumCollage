@@ -97,7 +97,7 @@ using AlbumCollage.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Pages\Albums\Form.razor"
+#line 46 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Pages\Albums\Form.razor"
        
     [Parameter] public Album Alb { get; set; }
     [Parameter] public string ButtonText { get; set; } = "Save";

@@ -1,4 +1,8 @@
-﻿<img src="data:image/jpeg;base64,@Alb.AlbumArt" />
+﻿<div class="AlbumArt">
+    <a href=@Alb.WikiURL>
+        <img src="data:image/jpeg;base64,@Alb.AlbumArt" />  
+    </a>
+</div>
 
 @code {
     [Parameter] public Album Alb { get; set; }

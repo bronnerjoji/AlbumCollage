@@ -97,7 +97,7 @@ using AlbumCollage.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 3 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Shared\AlbumArtComponent.razor"
+#line 7 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Shared\AlbumArtComponent.razor"
        
     [Parameter] public Album Alb { get; set; }
 

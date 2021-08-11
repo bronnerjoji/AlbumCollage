@@ -15,5 +15,6 @@ namespace AlbumCollage.Shared.Models
         [Required]
         public DateTime ReleaseDate { get; set; } = DateTime.Now;
         public string AlbumArt { get; set; }
+        public string WikiURL { get; set; }
     }
 }

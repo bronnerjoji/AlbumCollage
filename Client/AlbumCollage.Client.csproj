@@ -20,4 +20,8 @@
     <ProjectReference Include="..\Shared\AlbumCollage.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\bootstrap\" />
+  </ItemGroup>
+
 </Project>
