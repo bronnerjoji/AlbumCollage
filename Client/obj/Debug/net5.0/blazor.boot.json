@@ -242,13 +242,13 @@
       "mscorlib.dll": "sha256-9AZ7YsJz\/p2gr4E0EQXdHBqwDxoXqtzxhqC6aRsa2K8=",
       "netstandard.dll": "sha256-yOOty6BTX3e57YAEHK5a4nku\/lj0vi7jg\/eQZAjbDQk=",
       "System.Private.CoreLib.dll": "sha256-rraBQp6NevIQiELPVfDFDl5pv9QVJqCiZhB5bkpiZ88=",
-      "AlbumCollage.Shared.dll": "sha256-Ku6TtJmTpyA1YXvQiYVAvmRFKS9WOeAJeheT1hlGmQo=",
-      "AlbumCollage.Client.dll": "sha256-p7aNpGjEZBoJARhuCaGnYg6zqahTBxhxIXTBA6Vv34o="
+      "AlbumCollage.Shared.dll": "sha256-CFK3hVg9HZeZu7DM6Inc\/fbaEO++uD5vwXzeosuOdvI=",
+      "AlbumCollage.Client.dll": "sha256-864tPpfHLea5UFG1rLgehYN8FdzWIvb9N8xlYPsJeJM="
     },
     "lazyAssembly": null,
     "pdb": {
-      "AlbumCollage.Shared.pdb": "sha256-\/t7+9ORs7UN2z4c8DVkeZFJrwXlSrIbKUTN2t56KVqU=",
-      "AlbumCollage.Client.pdb": "sha256-HVQC018N9K64Uo+rch4BeiDd8p7M2lK+DDHK1cLDFuQ="
+      "AlbumCollage.Shared.pdb": "sha256-MIHp2u6OPiukHZDYBcBtXhJ1GZsRdOnqOVMgwl4NULE=",
+      "AlbumCollage.Client.pdb": "sha256-5vSMA0iYEwIle4B+enUajCCFTZRUEVSJzfN67GUjd44="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-L2vkcKzmXJtf+J7db5TbDMBckrgqJ5qc0ZzVIdRlm0I=",

@@ -2,7 +2,6 @@ C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\bin\Debug\net5.
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\bin\Debug\net5.0\AlbumCollage.Shared.dll
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\bin\Debug\net5.0\ref\AlbumCollage.Shared.dll
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\bin\Debug\net5.0\AlbumCollage.Shared.pdb
-C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\obj\Debug\net5.0\AlbumCollage.Shared.csproj.AssemblyReference.cache
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\obj\Debug\net5.0\AlbumCollage.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\obj\Debug\net5.0\AlbumCollage.Shared.AssemblyInfoInputs.cache
 C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Shared\obj\Debug\net5.0\AlbumCollage.Shared.AssemblyInfo.cs

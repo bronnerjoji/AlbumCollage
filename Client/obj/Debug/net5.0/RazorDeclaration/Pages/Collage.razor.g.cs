@@ -98,17 +98,18 @@ using AlbumCollage.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Pages\Collage.razor"
-       
-    Album[] Albums { get; set; }
-    int totalAlbums;
+#line 32 "C:\Users\bronn\Documents\GitHub\AlbumCollage\AlbumCollage\Client\Pages\Collage.razor"
+           
+        Album[] Albums { get; set; }
+        int totalAlbums;
 
-    protected override async Task OnInitializedAsync()
-    {
-        Albums = await client.GetFromJsonAsync<Album[]>("api/albums");
-        totalAlbums = Albums.Length;
-        Console.WriteLine(totalAlbums);
-    }
+        protected override async Task OnInitializedAsync()
+        {
+            Albums = await client.GetFromJsonAsync<Album[]>("api/albums");
+            totalAlbums = Albums.Length;
+            Console.WriteLine(totalAlbums);
+        }
+    
 
 #line default
 #line hidden

@@ -1,6 +1,7 @@
 ﻿@page "/collage"
 @inject HttpClient client
 
+ 
 <div class="row">
     <div class="column">
         @for (int i = 0; i < totalAlbums; i += 4)
@@ -28,14 +29,15 @@
     </div>
 </div>
 
-@code {
-    Album[] Albums { get; set; }
-    int totalAlbums;
+    @code {
+        Album[] Albums { get; set; }
+        int totalAlbums;
 
-    protected override async Task OnInitializedAsync()
-    {
-        Albums = await client.GetFromJsonAsync<Album[]>("api/albums");
-        totalAlbums = Albums.Length;
-        Console.WriteLine(totalAlbums);
+        protected override async Task OnInitializedAsync()
+        {
+            Albums = await client.GetFromJsonAsync<Album[]>("api/albums");
+            totalAlbums = Albums.Length;
+            Console.WriteLine(totalAlbums);
+        }
     }
-}
+

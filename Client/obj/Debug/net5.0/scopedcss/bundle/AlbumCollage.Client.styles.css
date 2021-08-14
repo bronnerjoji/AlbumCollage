@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
 /* Create four equal columns that sits next to each other */
 .column[b-vzv6lzeua1] {
     flex: 25%;
@@ -34,11 +33,34 @@
     }
 }
 
-[b-vzv6lzeua1] .AlbumArt:hover{
-    opacity: 0.5;
+[b-vzv6lzeua1] .block {
+    position: relative;
 }
 
+[b-vzv6lzeua1] .image {
+    display: block;
+    width: 100%;
+}
 
+[b-vzv6lzeua1] .imageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+[b-vzv6lzeua1] .imageoverlay:hover{
+    opacity:1;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-8u4roqvb2i] {
     position: relative;
